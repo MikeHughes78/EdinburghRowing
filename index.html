@@ -93,6 +93,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    padding-bottom: 50px; /* space for fixed social bar */
   }
 
   .hero-bg {
@@ -168,7 +169,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 1.5rem 3.5rem;
+    padding: 0.5rem 3.5rem 1rem;
   }
 
   .badge-edinburgh160 img {
@@ -183,15 +184,18 @@
     display: block;
   }
 
-  /* ── SOCIAL BAR — in-flow at very bottom ── */
+  /* ── SOCIAL BAR — fixed to bottom of viewport ── */
   .social-bar {
-    position: relative;
-    z-index: 2;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0; right: 0;
     background: var(--eubc-blue);
     padding: 0.6rem 3.5rem;
     display: flex;
     align-items: center;
     gap: 1.2rem;
+    border-top: 1px solid rgba(0,0,0,0.08);
   }
 
   .social-bar a {
@@ -251,7 +255,7 @@
 
     .hero-content { padding: 70px 1.5rem 1.5rem; }
 
-    .hero-badges { padding: 1rem 1.5rem; }
+    .hero-badges { padding: 0.5rem 1.5rem 1rem; }
 
     .badge-edinburgh160 img { max-width: 130px; }
     .badge-crest img { max-width: 140px; }
@@ -298,7 +302,7 @@
       > World-class education.<br>
       > World-class city.<br>
       > World-class sport.<br>
-      Whether you're a beginner, an Olympian, or somewhere in between, your experience with us will bring out the very best in you.
+      Whether you're a beginner, an Olympian, or somewhere in between, our programme will bring out the very best in you.
     </p>
   </div>
 
