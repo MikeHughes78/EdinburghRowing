@@ -128,6 +128,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   padding: 80px 3.5rem 1rem;
+  max-width: 65%;
 }
 
 .hero-welcome {
@@ -267,7 +268,7 @@ body {
     font-size: 1.1rem;
   }
 
-  .hero-content { padding: 70px 1.5rem 1.5rem; }
+  .hero-content { padding: 70px 1.5rem 1.5rem; max-width: 85%; }
 
   .hero-badges { padding: 0 1.5rem 1rem; min-height: 120px; }
 
